@@ -113,7 +113,7 @@ fi
 if [ "$ACTION" = "feeds update" -o "$ACTION" = "feeds" -o "$ACTION" = "full build" ]
 then
   out "1/5) Updating feeds"
-  ./scripts/feeds update
+  ./scripts/feeds update -a
 fi
 
 # At this point, out feed must exist
@@ -154,6 +154,7 @@ fi
 if [ "$ACTION" = "feeds install" -o "$ACTION" = "feeds" -o "$ACTION" = "full build" ]
 then
   out "2/5) Installing feeds"
+  ./scripts/feeds install -f curl
   ./scripts/feeds install -a
 fi
 

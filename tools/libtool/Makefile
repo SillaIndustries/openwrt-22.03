@@ -8,7 +8,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libtool
 PKG_CPE_ID:=cpe:/a:gnu:libtool
-PKG_VERSION:=2.4
+PKG_VERSION:=2.4.2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=@GNU/$(PKG_NAME)
